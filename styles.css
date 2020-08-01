@@ -121,17 +121,23 @@ html {
 .contact_content form {
     margin: 0 auto;
     margin-top: 2rem;  
-    height: 480px;
-    width: 400px;
+    height: 50%;
+    width: 60%;
     padding: 2rem;
     border: 2px solid #bdbdbd;
     border-radius: 10px;
 }
+@media screen and (min-width: 900px) {
+    .contact_content form {
+      height: 75%;
+    }
+  }
+
+
 .contact_content form label {
     display: block;
-    
-    font-size: 80%;
-    font-weight: 400;
+    font-size: 90%;
+    font-weight: bold;
     float: left;
 }
 .contact_content form input {
@@ -149,17 +155,34 @@ html {
     display: block;
     width: 97%;
     padding: .30rem;
+    height: 30%;
     border-radius: 10px;
     outline: 0;
     opacity: .7;
     font-size: 110%;
 }
 
+@media screen and (min-width: 900px) {
+    .contact_content form {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .contact_content form textarea {
+        height: 50%;
+    }
+}
+
+
+#email {
+    margin-bottom: 2.5rem;
+}
+
 
 .img_text_box {
     display: inline;
     width: 70%;
-
 }
 
 .img_div {
@@ -180,7 +203,7 @@ html {
     font-size: 100%;  
 }
 
-
+/* Content is the layout for Tech, Notables, difficulties and solution */
 .content {
     padding-bottom: 5%;
     text-align: left;
@@ -192,6 +215,13 @@ html {
     margin-left: 1rem;
     margin-right: 2rem;
     list-style: square; 
+}
+
+
+@media screen and (max-width: 900px) {
+    .content {
+    width: 200%;
+    }
 }
 
 .project a {
@@ -215,16 +245,16 @@ html {
 
 
  #send-btn {
-    margin: 2rem auto;
-    width: 30%;
+    margin: 1rem auto;
+    width: 97%;
     padding: 1rem;
     background-color: #647AA7;
     border: none;
     border-radius: 10px;
     color: #fff;
-    text-align: center;
-    float: left;
-    margin-right: 12px;
+    font-size: 100%;
+  
+    
 }
 #send-btn:hover {
     background-color: #A7A0BD;
