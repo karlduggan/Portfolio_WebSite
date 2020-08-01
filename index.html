@@ -1,0 +1,289 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <h2>KD</h2>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="header_container" id="home">
+            <h1>Karl Duggan</h1>
+            <p>Software Developer</p>
+
+            <!--
+            <div class="logo_list">
+                <img src="logos/python_logo.png" alt="" width="45" height="45">
+                <img src="logos/javascript_logo.png" alt="" width="50" height="50">
+                <img src="logos/react_logo.png" alt="" width="50" height="50">
+                <img src="logos/html5_logo.png" alt="" width="50" height="50">
+                <img src="logos/css3_logo.png" alt="" width="50" height="50">
+            </div>
+            -->
+           
+            <a href="#contact">Get In Touch</a>
+            <!-- Background image of stars -->
+            <div class="overlay">
+            </div>
+            
+        </div> <!-- Header Container-->
+
+        <div class="main_container">
+            <div class="content_one" id="about">
+                <h2>ABOUT</h2>
+                <p>I am a software developer currently based in Brighton UK, passionate about exploring and transforming creative ideas into reality with technologies such as Python, SQL, Javascript, HTML, CSS, React and PyQt.</p>
+                <p>I have experience writing Python scripts and SQL queries for manipulation and extraction on large datasets for data visual presentation.</p>
+                <p>With an ability to problem solve, I also have experience building custom solutions to increase productivity for day to day business operations, from automating daily report updates to updating over hundred thousand customer accounts with new features.</p> 
+            </div> <!-- Content Container-->
+
+            <div class="line_divide"></div>
+
+            <div class="content_three" id="portfolio">
+                <div class="portfolio">
+                    <h2>PORTFOLIO</h2>
+                    <p>The below examples range from business aid and productivity applications to experimental side-projects.</p>
+                    <p>Please click on the Github link to view more visual samples of the programs functionality and its source code.</p>
+                </div>
+
+                
+
+                <div class="project">
+                    <div>
+                        <h2>Phantom List (Automation App)</h2>
+                        <p>Phantom List is a desktop application for automating a set of instruction for mouse and keyboard, programed in Pyhon and using PyQt5 framework and PyAutoGui module.</p>
+                        <br>
+                        <a href="https://github.com/karlduggan/Phantom_Automation_App"><img src="logos/GitHub_Logo.png" alt="github" width="70" height="29"></a>    
+                    </div>
+                    <div class="img_div">
+                        <img src='demos/demo_phantom_list.gif' width="401.88" height="282.03" />
+                    </div>
+                    <div class="text_div">
+                        <div class="content">
+                            <h3>Technology Used</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>PyQt5</li>
+                                <li>PyAutoGui</li>
+                            </ul>    
+                        </div>
+                        
+                        <div class="content">
+                            <h3>Notable Features</h3>
+                            <ul>
+                                <li>Automation</li>
+                                <li>Minimalist User-Interface</li>
+                                <li>Save Files</li>
+                                <li>Load Files</li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Difficulties</h3>
+                            <p>When running the program there is a continuous loop, which uploads the graphics onto the screen. An issue occurred when trying to run a second "while loop" for the countdown function, which resulted in the GUI to become none-responsive until the loop terminated.</p>
+                        </div>
+                        
+                        <div class="content">
+                            <h3>Solutions</h3>
+                            <p>To overcome the looping issue, I had to implement threading, which is a module in Python that allows a second "while loop" to process separately.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="line_divide"></div>
+
+
+
+                <div class="project">
+                    <div>
+                        <h2>Countdown App</h2>
+                        <p>A simple and stylish countdown application to help maintain productivity whilst keeping track of time when working on other projects.</p>
+                        <br>
+                        <a href="https://github.com/karlduggan/Countdown_App"><img src="logos/GitHub_Logo.png" alt="github" width="70" height="29"></a>    
+                    </div>
+                    <div class="img_div">
+                        <img src='demos/demo_countdown.gif' width="400" height="400" />
+                    </div>
+                    <div class="text_div">
+                        <div class="content">
+                            <h3>Technology Used</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>PyQt5</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>   
+
+                        <div class="content">
+                            <h3>Notable Features</h3>
+                            <ul>
+                                <li>Timer</li>
+                                <li>Frameless Window</li>
+                                <li>Customisation</li>
+                                <li>Click and Drag Functionality</li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Difficulties</h3>
+                            <p>When running the program there is a continuous loop, which uploads the graphics onto the screen. An issue occurred when trying to run a second "while loop" for the countdown function, which resulted in the GUI to become none-responsive until the loop terminated.</p>
+                        </div>
+
+                        <div class="content">
+                            <h3>Solutions</h3>
+                            <p>To overcome the looping issue, I had to implement threading, which is a module in Python that allows a second "while loop" to process separately.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="line_divide"></div>
+
+
+
+                <div class="project">
+                    <div>
+                        <h2>Little Black Book</h2>
+                        <p>An "address book" style GUI application built to store old and new contacts on your computer. Written with Python and SQL, the front-end was built with PyQt5 framework for the graphical interface and Sqlite3 for the back-end to build the database.</p>
+                        <br>
+                        <a href="https://github.com/karlduggan/LittleBlackBookApp"><img src="logos/GitHub_Logo.png" alt="github" width="70" height="29"></a>    
+                    </div>
+                    <div class="img_div">
+                        <img src='demos/demo_lbb.gif' width="400" height="400" />
+                    </div>
+                    <div class="text_div">
+
+                        <div class="content">
+                            <h3>Technology Used</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>PyQt5</li>
+                                <li>Sqlite3</li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Notable Features</h3>
+                            <ul>
+                                <li>Table View</li>
+                                <li>Load Data Table</li>
+                                <li>Add Contact</li>
+                                <li>Update Contact</li>
+                                <li>Delete Contact</li>
+                                <li>Delete Confirmation</li>
+                                <li>Seacrch Contact</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="content">
+                            <h3>Difficulties</h3>
+                            <p>Building multiple functions for one application and getting the data table to print out on PyQT view table.</p>
+                        </div>
+
+                        <div class="content">
+                            <h3>Solutions</h3>
+                            <p>Building the functions on a smaller scale helped me to scale up to a bigger model. I gained an understanding of PyQt table view and its workings by reading Qt documentation.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="line_divide"></div>
+
+
+                <div class="project">
+                    <div>
+                        <h2>Energy Consumption Calculator</h2>
+                        <p>The Energy Calculator is a text-based program written to help investigate customers' consumption and locate any negative reads. For both gas and electric, the calculation is activated when the user selects "export reports" to which the program generates a text file report for both energies.</p>
+                        <br>
+                        <a href="https://github.com/karlduggan/Energy_Calculator"><img src="logos/GitHub_Logo.png" alt="github" width="70" height="29"></a>    
+                    </div>
+                
+                <div class="img_text_box">
+                <div class="img_div">
+                    <img src='demos/energy_demo.gif' width="400" height="400" />
+                </div>
+                    <div class="text_div">
+
+                        <div class="content">
+                            <h3>Technology Used</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>Pickle module</li>
+                            </ul>
+                        </div>
+
+                        <div class="content">
+                            <h3>Notable Features</h3>
+                            <ul>
+                                <li>Pickle Module</li>
+                                <li>Load Data</li>
+                                <li>Save Data</li>
+                                <li>Export via Csv</li>
+                                <li>Calulating Energy Units</li>
+                                <li>Delete Previous</li>
+                                <li>Generates Report</li>
+                            </ul>
+                        </div>
+                     
+                        <div class="content">         
+                            <h3>Difficulties</h3>
+                            <p>Creating a text-based user interface that is clear and user-friendly.</p>
+                        </div>
+
+                        <div class="content">
+                            <h3>Solutions</h3>
+                            <p>I took advantage of the "Sys" module in Python and applied "sys.clear()" as part of the "update" function to clear the screen and print out updated text. This resulted in a more user-friendly experience with clear structuring of text.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- Img_text_box end-->
+                </div> <!-- Project End-->
+                
+
+
+            </div>
+
+            <div class="line_divide"></div>
+
+            <div class="contact_content" id="contact">
+                <h2>CONTACT</h2>
+                <p>If you have any enquiries or require any further information, feel free to contact me.</p>
+                <form action="https://formspree.io/xgendano" method="POST">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" >
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="_replyto" >
+
+                    <label for="subject">Subject</label>
+                    <textarea name="message" id="subject" cols="30" rows="8"></textarea>
+                    
+                    <button id="send-btn" type="send" value="Send">Send</button>
+                </form>
+            </div>
+
+
+
+        </div><!-- Main Container-->
+        
+        <div class="footer_container">
+            <p>Karl Duggan Copyright &copy; 2020</p>
+        </div><!-- Footer Container-->
+    </div> <!-- Container-->
+
+    <script src="script.js"></script>
+</body>
+</html>
