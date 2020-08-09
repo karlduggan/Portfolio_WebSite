@@ -1,0 +1,67 @@
+
+
+/* Dropdown Menu Closed */
+.dropdown-menu {
+    /* shrink down */
+    position: relative;
+    height: 0px;
+    width: 100%;
+    text-align: center;
+    transition: ease-in-out 500ms;
+    background: black;
+    /* Dropdown menu will will hid off page when closed */
+    top: -400px;
+  
+}
+.dropdown-menu ul {
+    padding-top: .3rem;
+}
+.dropdown-menu ul li {
+    list-style: none;
+    margin: 2rem;
+    
+}
+.dropdown-menu ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    opacity: 0;
+    padding: 1rem;
+    transition: all ease-in-out 1000ms;
+}
+
+
+
+/* Dropdown Menu Open */
+.dropdown-menu-open {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    transition: ease-in-out 500ms; 
+    background-color: black;
+    top: 85px;
+
+}
+.dropdown-menu-open ul {
+    padding-top: .3rem;
+}
+.dropdown-menu-open ul li {
+    list-style: none;
+    margin-top: 2rem;
+}
+.dropdown-menu-open ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: ease-in-out 500ms;
+    color: #fff;
+    opacity: 1;
+    padding: 1rem;
+    
+}
+.dropdown-menu-open ul li a:hover {
+    color: rgb(0, 0, 0);
+    background: #fff;
+}
