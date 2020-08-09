@@ -3,21 +3,38 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="burger-menu.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Karl Duggan Portfolio</title>
 </head>
 <body>
     <div class="container">
-        <nav id="navbar">
+        <nav class="navbar" id="navbar">
             <h2>KD</h2>
             <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a class="homebtn" href="#home">HOME</a></li>
+                <li><a class="aboutbtn" href="#about">ABOUT</a></li>
+                <li><a class="portbtn" href="#portfolio">PORTFOLIO</a></li>
+                <li><a class="contactbtn" href="#contact">CONTACT</a></li>
             </ul>
+            <!-- Burger Menu -->
+            <div id="burger-menu" class="burger-menu">
+                <div class="menu-btn" onclick="toggleBtn()">
+                    <div class="menu-btn_burger"></div>
+                </div>
+            </div> <!-- burger menu end -->
         </nav>
+        <!-- Dropdown Menu -->
+        <div id="dropdown-menu" class="dropdown-menu-closed">
+            <ul>
+                <li><a class="drop-homebtn"  href="#home" onclick="toggleBtn()">HOME</a></li>
+                <li><a class="drop-aboutbtn" href="#about" onclick="toggleBtn()">ABOUT</a></li>
+                <li><a class="drop-portbtn" href="#portfolio" onclick="toggleBtn()">PORTFOLIO</a></li>
+                <li><a class="drop-contactbtn" href="#contact" onclick="toggleBtn()">CONTACT</a></li>
+            </ul>
+        </div> <!-- Dropdown Menu End-->
+        <header></header>
         <div class="header_container" id="home">
             <h1>Karl Duggan</h1>
             <!-- <p>Software Developer</p> -->
@@ -26,17 +43,16 @@
                 <p>Creating solutions and programming ideas into reality.</p>
             </div>
 
-            <!--
-            <div class="logo_list">
+            <!-- <div class="logo_list">
                 <img src="logos/python_logo.png" alt="" width="45" height="45">
                 <img src="logos/javascript_logo.png" alt="" width="50" height="50">
                 <img src="logos/react_logo.png" alt="" width="50" height="50">
                 <img src="logos/html5_logo.png" alt="" width="50" height="50">
                 <img src="logos/css3_logo.png" alt="" width="50" height="50">
-            </div>
-            -->
+            </div> -->
+  
            
-            <a href="#contact">Get In Touch</a>
+            <a class="getInContact-btn" href="#contact">Get In Touch</a>
             <!-- Background image of stars -->
             <div class="overlay">
             </div>
@@ -54,7 +70,7 @@
 
             <div class="line_divide"></div>
 
-            <div class="content_three" id="portfolio">
+            <div class="content_two" id="portfolio">
                 <div class="portfolio">
                     <h2>PORTFOLIO</h2>
                     <p>The below examples range from business aid and productivity applications to experimental side-projects.</p>
@@ -188,7 +204,7 @@
                                 <li>Update Contact</li>
                                 <li>Delete Contact</li>
                                 <li>Delete Confirmation</li>
-                                <li>Seacrch Contact</li>
+                                <li>Search Contact</li>
                             </ul>
                         </div>
                         
@@ -279,7 +295,7 @@
                     
                     <button id="send-btn" type="submit" value="Send">Send</button>
                 </form>
-            </div>
+            </div> <!-- Contact centent end -->
 
 
 
@@ -289,7 +305,7 @@
             <p>Karl Duggan Copyright &copy; 2020</p>
         </div><!-- Footer Container-->
     </div> <!-- Container-->
-
-    <script src="script.js"></script>
+    <script src="smoothScroll-Navbar.js"></script>
+    <script src="burgerAnimation.js"></script>
 </body>
 </html>
