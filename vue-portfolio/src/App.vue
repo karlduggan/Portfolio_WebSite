@@ -1,6 +1,6 @@
 <template>
-  <div class="background">
-      <section class="px-10 min-h-screen">
+  <div class="background snap-y snap-mandatory overflow-x-hidden">
+      <section class="snap-start px-10 min-h-screen">
       <!-- Particle Animation -->
       <vue-particles
         class="absolute h-[100%] w-[97%] "
@@ -54,12 +54,15 @@
     </div>
     </section>
 
-    <section class="relative  min-h-screen w-[100%] bg-gradient-to-b from-[rgba(44,21,69,1)]  to-[rgba(9,4,16,1)]  text-white py-10">
+    <section class="snap-start  min-h-screen w-[100%] bg-gradient-to-b from-[rgba(44,21,69,1)]  to-[rgba(9,4,16,1)]  text-white py-10">
       <h1 class="py-2 text-3xl">About</h1>
     </section>
 
-    <section class="relative  min-h-screen w-[100%] bg-[rgba(9,4,16,1)] text-white py-10">
-      <h1 class="py-2 text-3xl">Projects</h1>
+    <section class="snap-start relative min-h-screen w-[100%] bg-[rgba(9,4,16,1)] text-white py-10">
+      
+        <h1 class="py-2 text-3xl">Projects</h1>
+    
+      
     </section>
     
 
