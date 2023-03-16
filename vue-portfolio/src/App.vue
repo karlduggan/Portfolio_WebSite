@@ -1,7 +1,24 @@
 <template>
- 
-  <div class="background">
-  
+ <div>
+  <section class="background ">
+    <nav class="text-white py-10 mb-12 flex justify-betwen  ">
+    <h1 class="text-white text-5xl text-center"></h1>
+    <ui class="flex item-center">
+      <li>1</li>
+      <li>2</li>
+      </ui>
+    </nav>
+    <div class="text-center ">
+      <h1 class="text-white py-2 font-bold text-5xl ">Karl Duggan</h1>
+      <h2 class="text-white py-2 text-2xl ">Software Developer</h2>
+      <p class="text-white text-md py-5 leading-8">
+        Freelance software and web developer, creating software solution for your buisness needs.</p>
+    </div>
+    
+
+  </section>
+      <!-- Particle Animation -->
+    <div class="relative">
     <vue-particles
         color="#fff"
         :particleOpacity="0.7"
@@ -18,10 +35,9 @@
         hoverMode="grab"
         :clickEffect="false"
         clickMode="push"
-    
-      
-  ></vue-particles>
-      </div>
+    ></vue-particles>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -51,7 +67,8 @@ export default {
   color: #2c3e50;
 }
 .background {
-  background-color: black;
+  background: rgb(9,4,16);
+background: linear-gradient(42deg, rgba(9,4,16,1) 0%, rgba(44,21,69,1) 40%, rgba(174,127,217,1) 100%);
   width: 100%;
   height: 100%;
   position: absolute;
