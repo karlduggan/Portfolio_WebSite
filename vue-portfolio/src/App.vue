@@ -33,7 +33,7 @@
           </li>
         </ui>
       </nav>
-      <div class="text-center ">
+      <div class="text-center relative top-50">
         <h1 class="text-cyan-400 py-2 font-bold text-5xl ">Karl Duggan</h1>
         <h2 class="text-white py-2 text-2xl ">Software Developer</h2>
         <p class="text-white text-md py-5 leading-8">
@@ -54,17 +54,24 @@
     </div>
     </section>
 
-    <section class="snap-start  min-h-screen w-[100%] bg-gradient-to-b from-[rgba(44,21,69,1)]  to-[rgba(9,4,16,1)]  text-white py-10">
-      <h1 class="py-2 text-3xl">About</h1>
+    <section class="snap-start px-10 min-h-screen w-[100%] bg-gradient-to-b from-[rgba(44,21,69,1)]  to-[rgba(9,4,16,1)]  text-white py-10">
+      <h1 class="text-cyan-400 py-4 font-bold text-4xl ">About</h1>
+      <p class="leading-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </section>
 
-    <section class="snap-start relative min-h-screen w-[100%] bg-[rgba(9,4,16,1)] text-white py-10">
+    <section class="snap-start px-10 relative min-h-screen w-[100%] bg-white text-slate py-10">
       
-        <h1 class="py-2 text-3xl">Projects</h1>
+      <h1 class="text-cyan-400 py-4 font-bold text-4xl ">Projects</h1>
     
       
     </section>
     
+    <section class="snap-start px-10 relative min-h-screen w-[100%] bg-gradient-to-b from-[rgba(44,21,69,1)]  to-[rgba(9,4,16,1)] text-white py-10">
+      
+      <h1 class="text-cyan-400 py-4 font-bold text-4xl ">Contact</h1>
+  
+    
+  </section>
 
   </div>
 </template>

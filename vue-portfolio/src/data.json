@@ -1,0 +1,22 @@
+{
+"Hero": {
+    "header_1": "Karl Duggan",
+    "header_2": "Software Developer",
+    "para": "Freelance software and web developer, creating software solution for your buisness needs."
+},
+"Section_1": {
+    "header_1": "About"
+},
+"Section_2": {
+    "header_1": "Projects"
+},
+"Section_3": {
+    "header_1": "Blog"
+},
+"Section_4": {
+    "header_1": "Contact"
+},
+"Footer": {
+    
+}
+}
