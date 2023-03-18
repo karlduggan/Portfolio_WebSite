@@ -24,10 +24,8 @@
   
     <div class="relative">
       <nav class="text-white py-10  flex justify-between mb-20 ">
-        <h1 class="text-white text-xl text-center">Placeholder</h1>
+        <h1 class="text-white text-xl text-center">Karl Duggan</h1>
         <ui class="flex item-center list-none">
-          <li>1</li>
-          <li>2</li>
           <li>
             <a href="#" class="bg-gradient-to-r from-cyan-400 to-teal-400 px-4 py-2 rounded-md ml-8 font-bold cursor-pointer z-10">Contact</a>
           </li>
@@ -82,8 +80,8 @@
 
     <section class="snap-start px-10 relative min-h-screen w-[100%] bg-gradient-to-b from-[rgba(44,21,69,1)] to-[rgba(174,127,217,1)] text-slate py-10">
       
-      <h1 class="text-cyan-400 py-4 font-bold text-4xl text-left underline underline-offset-8">Projects</h1>
-    
+      <h1 class="text-cyan-400 py-4 font-bold text-4xl ">Apps & Websites</h1>
+      <ProjectSection></ProjectSection>
       
     </section>
     
@@ -94,7 +92,7 @@
         <ContactSection></ContactSection>
       </div>
 
-      <footer class="bg-[rgba(44,21,69,1)] bottom-0 absolute w-[100%] text-white h-40">
+      <footer class="bg-[rgba(44,21,69,1)] bottom-0 absolute w-[100%] text-white h-20">
         <p>d</p>
       </footer>
   </section>
@@ -105,12 +103,13 @@
 <script>
 
 import ContactSection from './components/ContactSection.vue';
-
+import ProjectSection from './components/ProjectSection.vue';
 
 export default {
   name: 'App',
   components: {
-    ContactSection
+    ContactSection,
+    ProjectSection
    
 }
 }
