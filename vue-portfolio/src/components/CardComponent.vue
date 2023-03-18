@@ -1,6 +1,6 @@
 <template>
 <div class="card-container m-auto mt-8 bg-white rounded shadow-md overflow-hidden">
-  <img class="w-full h-2/5 object-cover" src="https://cdn.vox-cdn.com/thumbor/ab7GeC585ehvC-Y4zEkqUcwOa9c=/0x0:2067x1377/1200x800/filters:focal(869x524:1199x854)/cdn.vox-cdn.com/uploads/chorus_image/image/54120135/your_name_oped.0.jpg" />
+  <img class="w-full h-2/5 object-cover" src="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg" />
   <div class="flex flex-col items-start justify-center p-4 text-left">
     <h3 class="font-bold text-2xl mb-2">Your Name</h3>
     <span class="text-sm">Two teenagers share a profound, magical connection upon discovering they are swapping bodies. But things become even more complicated when the boy and girl decide to meet in person.</span>
@@ -18,7 +18,7 @@ export default {
 <style scoped>
 .card-container {
   width: 350px;
-  height: 380px;
+  height: 370px;
   margin: auto;
   margin-top: 2rem;
   background-color: #FFF;

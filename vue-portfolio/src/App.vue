@@ -23,7 +23,7 @@
     
   
     <div class="relative">
-      <nav class="text-white py-10  flex justify-between mb-20 ">
+      <nav class="text-white py-10  flex justify-between mb-14 ">
         <h1 class="text-white text-xl text-center">Karl Duggan</h1>
         <ui class="flex item-center list-none">
           <li>
@@ -57,7 +57,7 @@
     </section>
 
     <section class="snap-start px-10 min-h-screen w-[100%] bg-[rgba(44,21,69,1)]  text-white py-10">
-      <div class="grid grid-cols-2 gap-x-40 grid-flow-row">
+      <div class="">
         <div>
           <h1 class="text-cyan-400 py-4 font-bold text-4xl text-left underline underline-offset-8">About</h1>
           <p class="text-left leading-8">
@@ -66,34 +66,33 @@
             I also have experience writing Python scripts and SQL queries for manipulation and extraction on large datasets for data visual presentation and data analysing.<br>
           </p>
         </div>
-        <div>
-          
-        </div>
-        <div>
-          
-        </div>
-        <div>
-          <h1 class="text-cyan-400 py-4 font-bold text-4xl text-left underline underline-offset-8">Skills</h1>
-        </div>
+      
+       
+        
       </div>
     </section>
 
     <section class="snap-start px-10 relative min-h-screen w-[100%] bg-gradient-to-b from-[rgba(44,21,69,1)] to-[rgba(174,127,217,1)] text-slate py-10">
       
-      <h1 class="text-cyan-400 py-4 font-bold text-4xl ">Apps & Websites</h1>
+      <h1 class="text-cyan-400 py-4 font-bold text-4xl ">Apps</h1>
       <ProjectSection></ProjectSection>
       
     </section>
+    <section class="snap-start px-10 relative min-h-screen w-[100%] bg-gradient-to-b from-[rgba(174,127,217,1)] to-gray-50 text-slate py-10">
+      
+      <h1 class="text-cyan-400 py-4 font-bold text-4xl ">Websites</h1>
+      
+    </section>
     
-    <section class="snap-start relative min-h-screen w-[100%] bg-white text-slate py-10">
+    <section class="snap-start relative min-h-screen w-[100%] bg-gray-50 text-slate py-10">
       <div class="px-10 ">
         <h1 class="text-cyan-400 py-4 font-bold text-5xl ">Send me a message!</h1>
-        <h2 class="text-slate py-2 text-2xl ">Got a question or proposal, or just want <br> to say hello? Go ahead.</h2>
+        <h2 class="text-slate pb-6 text-xl ">Got a question or proposal, or just want <br> to say hello? Go ahead.</h2>
         <ContactSection></ContactSection>
       </div>
 
-      <footer class="bg-[rgba(44,21,69,1)] bottom-0 absolute w-[100%] text-white h-20">
-        <p>d</p>
+      <footer class="bg-[rgba(174,127,217,1)] bottom-0 absolute w-[100%] text-white h-8 flex items-center justify-center">
+        <p class="text-xs">Karl Duggan 2023</p>
       </footer>
   </section>
 

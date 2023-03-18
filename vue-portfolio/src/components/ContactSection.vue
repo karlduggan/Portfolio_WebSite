@@ -1,42 +1,31 @@
 <template>
+    <div class="w-[100%] flex justify-center">
     <div
-  class="block max-w-md rounded-lg bg-white p-6 shadow-lg ">
+  class=" w-[520px] rounded-lg bg-white p-6  shadow-lg ">
     <form>
         <div class="relative mb-6" data-te-input-wrapper-init>
         <input
             type="text"
-            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            class="bg-slate-100 block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none "
             id="exampleInput7"
             placeholder="Name" />
-        <label
-            for="exampleInput7"
-            class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
-            >Name
-        </label>
+     
         </div>
         <div class="relative mb-6" data-te-input-wrapper-init>
         <input
             type="email"
-            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            class="bg-slate-100 block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none"
             id="exampleInput8"
             placeholder="Email address" />
-        <label
-            for="exampleInput8"
-            class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
-            >Email address
-        </label>
+       
         </div>
         <div class="relative mb-6" data-te-input-wrapper-init>
         <textarea
-            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            class="bg-slate-100 block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none"
             id="exampleFormControlTextarea13"
             rows="3"
             placeholder="Message"></textarea>
-        <label
-            for="exampleFormControlTextarea13"
-            class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none "
-            >Message
-        </label>
+      
         </div>
         <div
         class="mb-6 flex min-h-[1.5rem] items-center justify-center pl-[1.5rem]">
@@ -53,12 +42,13 @@
         </div>
         <button
         type="submit"
-        class="w-full rounded bg-primary px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-primary-700 hover:shadow-lg focus:bg-primary-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-800 active:shadow-lg"
+        class="w-full rounded bg-gradient-to-r from-cyan-400 to-teal-400  px-6 py-2.5 text-sm font-bold uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out  focus:outline-none focus:ring-0"
         data-te-ripple-init
         data-te-ripple-color="light">
         Send
         </button>
     </form>
+    </div>
     </div>
 </template>
 
