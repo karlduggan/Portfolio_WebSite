@@ -57,19 +57,21 @@
     </section>
 
     <section class="snap-start px-10 min-h-screen w-[100%] bg-[rgba(44,21,69,1)]  text-white py-10">
-      <div class="">
-        <div>
-          <h1 class="text-cyan-400 py-4 font-bold text-4xl text-left underline underline-offset-8">About</h1>
-          <p class="text-left leading-8">
-            I am a software developer currently based in Brighton UK, passionate about exploring and transforming creative ideas into reality with technologies such as Python, SQL, Javascript, HTML and CSS.<br>
-            Experienced in designing and developing desktop applications to help boost productivity to daily buisness operations.<br>
-            I also have experience writing Python scripts and SQL queries for manipulation and extraction on large datasets for data visual presentation and data analysing.<br>
-          </p>
-        </div>
-      
-       
-        
+      <div class="max-w-4xl mx-auto">
+    <h1 class="text-cyan-400 py-4 font-bold text-4xl underline underline-offset-8 text-left mb-8">About Me</h1>
+    <div class="flex flex-col md:flex-row justify-between">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <p class="text-left leading-8">
+          I am a software developer based in Brighton, UK. I am passionate about exploring creative ideas and transforming them into reality with the help of technologies such as Python, SQL, JavaScript, HTML, and CSS.
+        </p>
       </div>
+      <div class="md:w-1/2">
+        <p class="text-left leading-8">
+          I have experience in designing and developing desktop applications that can help boost productivity and improve daily business operations. Additionally, I have expertise in writing Python scripts and SQL queries for manipulating and extracting large datasets, as well as presenting and analyzing data visually.
+        </p>
+      </div>
+    </div>
+  </div>
     </section>
 
     <section class="snap-start px-10 relative min-h-screen w-[100%] bg-gradient-to-b from-[rgba(44,21,69,1)] to-[rgba(174,127,217,1)] text-slate py-10">
