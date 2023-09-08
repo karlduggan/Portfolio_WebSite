@@ -42,7 +42,7 @@
         </div>
         <button
         type="submit"
-        class="w-full rounded bg-gradient-to-r from-cyan-400 to-teal-400  px-6 py-2.5 text-sm font-bold uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out  focus:outline-none focus:ring-0"
+        class="w-full rounded bg-black px-6 py-2.5 text-sm font-bold uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out  focus:outline-none focus:ring-0"
         data-te-ripple-init
         data-te-ripple-color="light">
         Send

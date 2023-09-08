@@ -12,3 +12,7 @@ https://v2.tailwindcss.com/docs/guides/vue-3-vite
 
 Gradient background tool used:
 https://cssgradient.io/
+
+
+cd into vue-portfolio 
+npm run serve
