@@ -36,7 +36,7 @@
         <div class="text-left pt-20">
           <h1 class="text-white py-2 font-bold text-5xl max-w-2xl">Software & Web Developer</h1>
           <h2 class="text-white py-2 text-3xl ">Karl Duggan</h2>
-          <p class="text-white text-2xl py-5 leading-10 max-w-3xl text-left">
+          <p class="text-white text-2xl py-5 pr-14 leading-10 max-w-3xl text-left">
             I'm a freelance software and web developer with a focus on creating custom software solutions and websites that cater to your business's specific needs.
           </p>
           <ui class="flex justify-left list-none py-2 gap-6">
@@ -84,9 +84,27 @@
       <div class="mx-auto max-w-[1080px]">
         <h1 class="text-black py-4 font-bold text-4xl text-left">Apps</h1>
         <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-4">
-          <CardComponent></CardComponent>
-          <CardComponent></CardComponent>
-          <CardComponent></CardComponent>
+          <CardComponent
+            name="TeachEasy"
+            description="Two bodies. But things become even more complicated when the boy and girl decide to meet in person."
+            imageSrc="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg"
+            link="https://www.github.com/karlduggan/"
+            status="In Progress"
+          />
+          <CardComponent
+            name="Sight Read Dojo"
+            description="Two bodies. But things become even more complicated when the boy and girl decide to meet in person."
+            imageSrc="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg"
+            link="https://www.github.com/karlduggan/"
+            status="Completed"
+          />
+          <CardComponent
+            name="Single Page Resume"
+            description="Two bodies. But things become even more complicated when the boy and girl decide to meet in person."
+            imageSrc="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg"
+            link="https://www.github.com/karlduggan/"
+            status="Completed"
+          />
         </div>
       </div>
     </section>
