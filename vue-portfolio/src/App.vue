@@ -1,7 +1,7 @@
 <template>
   <div class="background overflow-x-hidden">
-          <!-- Particle Animation -->
-          <vue-particles
+        <!-- Particle Animation -->
+        <vue-particles
         class="absolute h-[100%] w-[97%] "
         color="#fff"
         :particleOpacity="0.7"
@@ -32,12 +32,12 @@
         </ui>
       </nav>
 
-      <div class="flex items-center pt-16">
+      <div class="flex items-center pt-16 js-show-on-scroll animate-fadeInUp">
         <div class="text-left pt-20">
           <h1 class="text-white py-2 font-bold text-5xl max-w-2xl">Software & Web Developer</h1>
           <h2 class="text-white py-2 text-3xl ">Karl Duggan</h2>
-          <p class="text-white text-2xl py-5 pr-14 leading-10 max-w-3xl text-left">
-            I'm a freelance software and web developer with a focus on creating custom software solutions and websites that cater to your business's specific needs.
+          <p class="text-white text-2xl py-5 pr-14 leading-10 max-w-3xl text-left ">
+            I'm a freelance software and web developer with a focus on creating custom software solutions and websites that cater to your business specific needs.
           </p>
           <ui class="flex justify-left list-none py-2 gap-6">
             <li>
@@ -66,10 +66,10 @@
     </div>
     </section>
 
-    <section class="px-10  bg-gray-50 py-32">
-      <div class="mx-auto max-w-[1080px]">
+    <section class="px-10  bg-gray-50 py-32 ">
+      <div class="mx-auto max-w-[1080px] ">
         <h1 class="text-black font-bold text-4xl text-left mb-8">About Me</h1>
-        <div class="flex flex-col justify-between text-black text-xl">
+        <div class="flex flex-col justify-between text-black text-xl js-show-on-scroll animate-slideIn">
             <p class="text-left leading-10 py-4 "> 
               I am a software developer based in Brighton, UK. I am passionate about exploring creative ideas and transforming them into reality with the help of technologies such as Python, SQL, JavaScript, HTML, and CSS.
             </p>
@@ -83,7 +83,7 @@
     <section class=" px-10 min-h-screen bg-gray-50 py-32">
       <div class="mx-auto max-w-[1080px]">
         <h1 class="text-black py-4 font-bold text-4xl text-left">Apps</h1>
-        <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-4">
+        <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-4 js-show-on-scroll animate-fadeInUp">
           <CardComponent
             name="TeachEasy"
             description="Two bodies. But things become even more complicated when the boy and girl decide to meet in person."
@@ -95,7 +95,7 @@
           <CardComponent
             name="Sight Read Dojo"
             description="SightRead Dojo is an interactive music notation game designed to help music students improve their skills in reading and memorizing notation on both the Treble and Bass clefs."
-            imageSrc="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg"
+            imageSrc= "../assets/images/sightreaddojo.png"
             github_link="https://github.com/karlduggan/SightReadDojo"
             link="https://sightreaddojo.netlify.app"
             status="Completed"
@@ -114,7 +114,8 @@
     <section class=" px-10 relative min-h-screen bg-black text-slate py-32">
       <div class="mx-auto max-w-[1080px]">
         <h1 class="text-white py-4 font-bold text-4xl text-left">Websites</h1>
-        <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-4">
+        <p class="text-left leading-10 text-white text-xl">Here are three website templates designed for Vue.js framework, styled using Tailwind CSS.</p>
+        <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-4 js-show-on-scroll animate-fadeInUp">
           <CardComponent
             name="eCommerce"
             description=""
@@ -140,7 +141,21 @@
             status=""
           />
         </div>
+        <h1 class="text-white pt-32 pb-16 font-bold text-4xl text-left">Features</h1>
+        <ul class="list-none text-white text-xl leading-8 text-left grid grid-rows-flow grid-cols-4 gap-4">
+          <li>Dark and Light Mode</li>
+          <li>100% Responsive Design</li>
+          <li>Image Lazy Loading</li>
+          <li>Image Gallery</li> 
+          <li>Scroll To Top Button</li>
+          <li>Compatible with Modern Browsers</li>
+          <li>Optimised for Mobile Devices</li>
+          <li>Support Contact Form (Formspree)</li>
+          <li>Support MailChimp Newsletter</li>
+          <li>Support Google Analytics</li> 
+        </ul>
       </div>
+      
     </section>
     
     <section id="contact" class="relative bg-gray-50 text-slate py-32 min-h-screen">
@@ -168,6 +183,11 @@ export default {
     ContactSection,
     CardComponent
 },
+data(){
+  return {
+
+  }
+},
 methods: {
     scrollToContact() {
       const contactSection = document.getElementById("contact");
@@ -176,7 +196,49 @@ methods: {
         contactSection.scrollIntoView({ behavior: "smooth" });
       }
     },
-  }
+  },
+  mounted() {
+    // Initialize the IntersectionObserver
+    const callback = function (entries) {
+      entries.forEach((entry) => {
+        console.log(entry);
+
+        if (entry.isIntersecting) {
+          // When the element crossed the observer then the animation class will be applied
+
+          // Get the element's classList
+          const classList = entry.target.classList;
+          // Check if the classList contains a class with a certain word
+          if (classList.contains("animate-fadeInUp")) {
+            entry.target.classList.add("fadeInUp");
+          }
+          if (classList.contains("animate-slideIn")) {
+            entry.target.classList.add("slideInLeft");
+          } 
+       
+        }
+        // If you want to remove the class after element is out of site you can do so by adding the below else statement
+        // } else {
+        //   entry.target.classList.remove("slide_in_text");
+        // }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback);
+
+    // Select the elements you want to observe (change this selector to match your elements)
+    const targets = document.querySelectorAll(".js-show-on-scroll");
+
+    // Apply initial styling (if needed)
+    targets.forEach(function (target) {
+      target.classList.add("opacity-0");
+    });
+
+    // Start observing the selected elements
+    targets.forEach(function (target) {
+      observer.observe(target);
+    });
+  },
 }
 </script>
 
@@ -222,6 +284,59 @@ methods: {
 .animate-float-2 {
   animation: float2 5s ease-in-out infinite;
 }
+/*==== SLIDE IN LEFT ===*/
+.slideInLeft {
+  transform: translateX(-100%);
+	opacity: 0;
+	animation: slide-in-anim 1s ease-out forwards;
+}
+@keyframes slide-in-anim {
+	20% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+/*==== FADE IN UP ===*/
+@-webkit-keyframes fadeInUp {
+  20% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  20% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  transform: translateY(100%);
+	opacity: 0;
+	animation: slide-in-anim 1s ease-out forwards;
+}
+
+
+
 
 
 </style>
