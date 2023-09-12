@@ -1,7 +1,7 @@
 <template>
   <div class="card-container m-auto mt-8 bg-white rounded shadow-md overflow-hidden relative">
     <div class="image-container relative">
-      <img class="w-full h-2/5 object-cover" :src="imageSource" />
+      <img class="w-full h-2/5 object-cover" :src="require(`../assets/${imageSource}`)" alt=""/>
     </div>
     <div class="flex flex-col items-start justify-center p-4 text-left">
       <h3 class="font-bold text-xl mb-2">{{ name }}</h3>
@@ -42,7 +42,8 @@ export default {
   },
   computed: {
     imageSource() {
-      return this.imageSrc || "https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg";
+      // return this.imageSrc || "https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg";
+      return this.imageSrc || "images/placeholder-image.jpg";
     },
   },
 }

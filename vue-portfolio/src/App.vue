@@ -87,7 +87,7 @@
           <CardComponent
             name="TeachEasy"
             description="Two bodies. But things become even more complicated when the boy and girl decide to meet in person."
-            imageSrc="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg"
+            imageSrc=""
             github_link="https://www.github.com/karlduggan/"
             link=""
             status="In Progress"
@@ -95,7 +95,7 @@
           <CardComponent
             name="Sight Read Dojo"
             description="SightRead Dojo is an interactive music notation game designed to help music students improve their skills in reading and memorizing notation on both the Treble and Bass clefs."
-            imageSrc= "../assets/images/sightreaddojo.png"
+            imageSrc= "images/sightreaddojo.png"
             github_link="https://github.com/karlduggan/SightReadDojo"
             link="https://sightreaddojo.netlify.app"
             status="Completed"
@@ -103,7 +103,7 @@
           <CardComponent
             name="Single Page Resume"
             description="Single Page Resume: A Vue.js app for quick, user-friendly, and professionally designed single-page resumes with various templates."
-            imageSrc="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg"
+            imageSrc="images/singlepageresume.png"
             github_link="https://github.com/karlduggan/singlepageresume"
             link="https://singlepageresume.netlify.app/"
             status="Completed"
