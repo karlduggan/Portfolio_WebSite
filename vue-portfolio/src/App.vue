@@ -27,7 +27,7 @@
         <h1 class="text-white text-xl text-center">Karl Duggan</h1>
         <ui class="flex item-center list-none">
           <li>
-            <a href="#" class="bg-white px-4 py-2 rounded-md font-bold text-black cursor-pointer z-10">Contact</a>
+            <button @click="scrollToContact" class="bg-white px-4 py-2 rounded-md font-bold text-black cursor-pointer z-10">Contact</button>
           </li>
         </ui>
       </nav>
@@ -88,21 +88,24 @@
             name="TeachEasy"
             description="Two bodies. But things become even more complicated when the boy and girl decide to meet in person."
             imageSrc="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg"
-            link="https://www.github.com/karlduggan/"
+            github_link="https://www.github.com/karlduggan/"
+            link=""
             status="In Progress"
           />
           <CardComponent
             name="Sight Read Dojo"
-            description="Two bodies. But things become even more complicated when the boy and girl decide to meet in person."
+            description="SightRead Dojo is an interactive music notation game designed to help music students improve their skills in reading and memorizing notation on both the Treble and Bass clefs."
             imageSrc="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg"
-            link="https://www.github.com/karlduggan/"
+            github_link="https://github.com/karlduggan/SightReadDojo"
+            link="https://sightreaddojo.netlify.app"
             status="Completed"
           />
           <CardComponent
             name="Single Page Resume"
-            description="Two bodies. But things become even more complicated when the boy and girl decide to meet in person."
+            description="Single Page Resume: A Vue.js app for quick, user-friendly, and professionally designed single-page resumes with various templates."
             imageSrc="https://www.pulsecarshalton.co.uk/wp-content/uploads/2016/08/jk-placeholder-image.jpg"
-            link="https://www.github.com/karlduggan/"
+            github_link="https://github.com/karlduggan/singlepageresume"
+            link="https://singlepageresume.netlify.app/"
             status="Completed"
           />
         </div>
@@ -112,14 +115,35 @@
       <div class="mx-auto max-w-[1080px]">
         <h1 class="text-white py-4 font-bold text-4xl text-left">Websites</h1>
         <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-4">
-          <CardComponent></CardComponent>
-          <CardComponent></CardComponent>
-          <CardComponent></CardComponent>
+          <CardComponent
+            name="eCommerce"
+            description=""
+            imageSrc=""
+            github_link=""
+            link=""
+            status=""
+          />
+          <CardComponent
+            name="Business"
+            description=""
+            imageSrc=""
+            github_link=""
+            link=""
+            status=""
+          />
+          <CardComponent
+            name="Personal"
+            description=""
+            imageSrc=""
+            github_link=""
+            link=""
+            status=""
+          />
         </div>
       </div>
     </section>
     
-    <section class="relative bg-gray-50 text-slate py-32 min-h-screen">
+    <section id="contact" class="relative bg-gray-50 text-slate py-32 min-h-screen">
       <div class="mx-auto max-w-[1080px] ">
         <h1 class="text-black py-4 font-bold text-5xl ">Send me a message!</h1>
         <h2 class="text-slate pb-6 text-xl ">Got a question or proposal, or just want <br> to say hello? Go ahead.</h2>
@@ -143,7 +167,16 @@ export default {
   components: {
     ContactSection,
     CardComponent
-}
+},
+methods: {
+    scrollToContact() {
+      const contactSection = document.getElementById("contact");
+
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+  }
 }
 </script>
 
